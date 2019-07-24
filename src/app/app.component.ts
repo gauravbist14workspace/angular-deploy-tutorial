@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +13,7 @@ export class AppComponent {
   imgs: any[];
 
   constructor() {
-    this.imgs = [
-      "https://www.w3schools.com/bootstrap/la.jpg",
-      "https://www.w3schools.com/bootstrap/chicago.jpg",
-      "https://www.w3schools.com/bootstrap/ny.jpg"
-    ]
-
+    this.imgs = environment.pic_urls;
     this.selectedImageIndex = 0;
   }
 

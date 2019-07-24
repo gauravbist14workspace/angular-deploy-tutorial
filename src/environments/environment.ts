@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  pic_urls: [
+    'https://www.w3schools.com/bootstrap/la.jpg',
+    'https://www.w3schools.com/bootstrap/chicago.jpg',
+    'https://www.w3schools.com/bootstrap/ny.jpg'
+  ]
 };
 
 /*
