@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-new-proj';
-  
+
   selectedImageIndex: number;
   imgs: any[];
 
@@ -22,7 +22,7 @@ export class AppComponent {
   }
 
   nextPic() {
-    if (this.selectedImageIndex == this.imgs.length - 1) {
+    if (this.selectedImageIndex === this.imgs.length - 1) {
       this.selectedImageIndex = 0;
     } else {
       this.selectedImageIndex++;
@@ -30,7 +30,7 @@ export class AppComponent {
   }
 
   prevPic() {
-    if (this.selectedImageIndex == 0) {
+    if (this.selectedImageIndex === 0) {
       this.selectedImageIndex = this.imgs.length - 1;
     } else {
       this.selectedImageIndex--;
