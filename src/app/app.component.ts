@@ -9,27 +9,6 @@ import { environment } from '../environments/environment';
 export class AppComponent {
   title = 'my-new-proj';
 
-  selectedImageIndex: number;
-  imgs: any[];
-
   constructor() {
-    this.imgs = environment.pic_urls;
-    this.selectedImageIndex = 0;
-  }
-
-  nextPic() {
-    if (this.selectedImageIndex === this.imgs.length - 1) {
-      this.selectedImageIndex = 0;
-    } else {
-      this.selectedImageIndex++;
-    }
-  }
-
-  prevPic() {
-    if (this.selectedImageIndex === 0) {
-      this.selectedImageIndex = this.imgs.length - 1;
-    } else {
-      this.selectedImageIndex--;
-    }
   }
 }
