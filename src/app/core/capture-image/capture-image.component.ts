@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $: any;
 @Component({
   selector: 'app-capture-image',
   templateUrl: './capture-image.component.html',
@@ -15,6 +16,10 @@ export class CaptureImageComponent implements OnInit {
   ngOnInit() {
     this.imageFile = null;
     this.imageString = '';
+  }
+
+  getImage() {
+    $('#imgBtn').click();
   }
 
   onChangeImage(event) {
